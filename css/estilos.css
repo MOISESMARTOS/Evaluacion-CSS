@@ -9,6 +9,15 @@ header {
   display: flex;
   flex-flow: column;
   text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+#Titulo-principal{
+  color: white;
+  font-size: 3em;
+  text-shadow: #02010a 2px 2px;
+}
+.menu{
+  padding-left: 0px;
 }
 nav ul li {
   margin: 2%;
@@ -23,13 +32,44 @@ nav ul li {
 #contenedor-sencundario{
   width: 100%;
   background: #d5c75f;
-  border: 1px;
   text-align: center;
 }
 .imagen-central, .img-sencundario{
   width: 80%;
+  border: 1px solid black;
 }
-
+#paisaje1{
+  transform: rotate(0);
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  box-shadow: 2px 2px 3px #82c3a6;
+  border: 2px solid black;
+}
+#paisaje1:hover{
+  transform: rotate(10deg);
+}
+#retrato1{
+  transform: translate(0, 0);
+  transition-property: transform;
+  transition-duration: 1s;
+  box-shadow: 2px 2px 3px #82c3a6;
+  border: 2px solid black;
+}
+#retrato1:hover{
+  transform: translate(23px, -5px);
+}
+footer{
+  border-radius: 0 0 10px 10px;
+  background-color: #C6d5c5;
+  text-align: left;
+  margin-top: 0;
+  border-top: 2px solid red;
+  padding: 2%;
+}
+.img-redes{
+  width: 1em;
+}
 @media all and (min-width: 600px){
   header {
     background-color: #5b7989;
