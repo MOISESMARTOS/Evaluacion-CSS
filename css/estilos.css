@@ -1,8 +1,6 @@
 body{
   font-family: 'Dancing Script';
   background-color: #02010a;
-	width: 90%;
-	margin-left: 5%;
 }
 header {
   background-color: #d5c75f;
@@ -19,20 +17,30 @@ header {
 .menu{
   padding-left: 0px;
 }
-nav ul li {
+nav ul li{
   margin: 2%;
   display: inline;
-  list-style: none;
+  font-size: 1.5em;
+}
+a{
+  color: white;
+}
+a:active{
+  text-decoration: none;
 }
 #contenedor-central{
   background-color: #82c3a6;
   width: 100%;
   text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 #contenedor-sencundario{
   width: 100%;
   background: #d5c75f;
   text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%
 }
 .imagen-central, .img-sencundario{
   width: 80%;
@@ -43,7 +51,7 @@ nav ul li {
   transition-property: transform;
   transition-duration: 1s;
   transition-timing-function: linear;
-  box-shadow: 2px 2px 3px #82c3a6;
+  box-shadow: 2px 2px 3px #02010a;
   border: 2px solid black;
 }
 #paisaje1:hover{
@@ -53,42 +61,79 @@ nav ul li {
   transform: translate(0, 0);
   transition-property: transform;
   transition-duration: 1s;
-  box-shadow: 2px 2px 3px #82c3a6;
+  box-shadow: 2px 2px 3px #02010a;
   border: 2px solid black;
 }
 #retrato1:hover{
   transform: translate(23px, -5px);
 }
+h2{
+  margin-top: 0.2em;
+}
 footer{
   border-radius: 0 0 10px 10px;
   background-color: #C6d5c5;
   text-align: left;
-  margin-top: 0;
-  border-top: 2px solid red;
-  padding: 2%;
+  padding: 1em;
+}
+.categ-pie{
+  margin-bottom: 0px;
+}
+h3{
+  margin-top: 0px;
 }
 .img-redes{
   width: 1em;
 }
-@media all and (min-width: 600px){
-  header {
-    background-color: #5b7989;
-    display: flex;
-    flex-flow:wrap;
-  }
+
+@media all and (min-width: 900px){
+body{
+  width: 100%;
+  margin-left: calc((100% - 900px)/2);
+	display: flex;
+	flex-flow: column;
+}
+header {
+  box-sizing: border-box;
+  max-width: 900px;
+  background-color: #5b7989;
+  display: flex;
+  flex-flow:wrap;
+  text-align: left;
+}
+#contenido{
+  box-sizing: border-box;
+  max-width: 900px;
+}
+#contenedor-sencundario, footer{
+  display: flex;
+  flex-flow: row;
+}
+#contenedor-sencundario>div{
+  width: 50%;
+}
   h1{
-    width: 80%;
+    width: 68%;
+    margin-left: 2%;
   }
   nav {
     margin: 0;
-    width: 20%;
+    width: 30%;
   }
   nav ul {
-      margin-top: 15%;
+      margin-top: 20%;
   }
 
   nav ul li {
     display: inline;
     list-style: none;
+  }
+  footer{
+    box-sizing: border-box;
+    max-width: 900px;
+  }
+  .pie{
+    padding-left: 0.5em;
+    width: 25%;
   }
 }
