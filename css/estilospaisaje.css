@@ -49,47 +49,27 @@ a{
 a:target {
   text-decoration: none;
 }
-#contenedor-central{
-  background-color: #82c3a6;
-  width: 100%;
-  text-align: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-#contenedor-sencundario{
+#contenido{
   width: 100%;
   background: #d5c75f;
   text-align: center;
   padding-top: 2%;
   padding-bottom: 2%
 }
-.imagen-central, .img-sencundario{
+img[id*="paisaje"]{
   width: 80%;
   border: 1px solid black;
+  box-shadow: 2px 2px 3px #02010a;
 }
 #paisaje1{
-  transform: rotate(0);
-  transition-property: transform;
-  transition-duration: 1s;
-  transition-timing-function: linear;
-  box-shadow: 2px 2px 3px #02010a;
-  border: 2px solid black;
+  filter: blur(10px);
+  -webkit-filter: blur(100%);
 }
-#paisaje1:hover{
-  transform: rotate(10deg);
+#paisaje2, #paisaje4, #paisaje6{
+  filter: grayscale(100%);
 }
-#retrato1{
-  transform: translate(0, 0);
-  transition-property: transform;
-  transition-duration: 1s;
-  box-shadow: 2px 2px 3px #02010a;
-  border: 2px solid black;
-}
-#retrato1:hover{
-  transform: translate(23px, -5px);
-}
-h2{
-  margin-top: 0.2em;
+#paisaje3{
+  filter:sepia(90%);
 }
 footer{
   border-radius: 0 0 10px 10px;
@@ -106,7 +86,6 @@ h3{
 .img-redes{
   width: 1em;
 }
-
 @media all and (min-width: 900px){
 body{
   width: 100%;
@@ -126,12 +105,12 @@ header {
   box-sizing: border-box;
   max-width: 900px;
 }
-#contenedor-sencundario, footer{
+#contenedor{
   display: flex;
-  flex-flow: row;
+  flex-flow:wrap;
 }
-#contenedor-sencundario>div{
-  width: 50%;
+.galeria{
+  width: 33.33%;
 }
   h1{
     width: 68%;
@@ -150,6 +129,8 @@ header {
     list-style: none;
   }
   footer{
+    display: flex;
+    flex-flow: row;
     box-sizing: border-box;
     max-width: 900px;
   }
