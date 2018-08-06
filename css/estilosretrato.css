@@ -27,7 +27,6 @@ header {
   }
 }
 
-
 #Titulo-principal{
   color: white;
   font-size: 3em;
@@ -54,19 +53,19 @@ a[href="#"] {
   padding-top: 2%;
   padding-bottom: 2%
 }
-img[id*="paisaje"]{
+img[id*="retrato"]{
   width: 80%;
   border: 1px solid black;
   box-shadow: 2px 2px 3px #02010a;
 }
-#paisaje1{
+#retrato1{
   filter: blur(10px);
   -webkit-filter: blur(100%);
 }
-#paisaje2, #paisaje4, #paisaje6{
+#retrato2, #retrato4, #retrato6{
   filter: grayscale(100%);
 }
-#paisaje3{
+#retrato3{
   filter:sepia(90%);
 }
 footer{

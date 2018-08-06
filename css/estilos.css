@@ -1,9 +1,20 @@
-header{
-animation-name: slide;
-animation-duration: 2s;
-animation-delay: 1s;
 
+body{
+  font-family: 'Dancing Script';
+  background-color: #02010a;
 }
+
+header {
+  background-color: #5b7989;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+
+  animation-name: slide;
+  animation-duration: 2s;
+}
+
 @keyframes slide {
   0%{
     margin-top: 150%;
@@ -14,20 +25,6 @@ animation-delay: 1s;
   100%{
     margin-top: 0%;
   }
-}
-
-
-body{
-  font-family: 'Dancing Script';
-  background-color: #02010a;
-}
-
-header {
-  background-color: #d5c75f;
-  display: flex;
-  flex-flow: column;
-  text-align: center;
-  border-radius: 10px 10px 0 0;
 }
 
 #Titulo-principal{
@@ -46,7 +43,7 @@ nav ul li{
 a{
   color: white;
 }
-a:target {
+a[href="#"] {
   text-decoration: none;
 }
 #contenedor-central{
@@ -66,14 +63,14 @@ a:target {
 .imagen-central, .img-sencundario{
   width: 80%;
   border: 1px solid black;
+  box-shadow: 2px 2px 3px #02010a;
+  border: 2px solid black;
 }
 #paisaje1{
   transform: rotate(0);
   transition-property: transform;
   transition-duration: 1s;
   transition-timing-function: linear;
-  box-shadow: 2px 2px 3px #02010a;
-  border: 2px solid black;
 }
 #paisaje1:hover{
   transform: rotate(10deg);
@@ -82,8 +79,6 @@ a:target {
   transform: translate(0, 0);
   transition-property: transform;
   transition-duration: 1s;
-  box-shadow: 2px 2px 3px #02010a;
-  border: 2px solid black;
 }
 #retrato1:hover{
   transform: translate(23px, -5px);
